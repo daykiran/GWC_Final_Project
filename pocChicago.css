@@ -1,0 +1,152 @@
+/* top navbar code */
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 20;
+  overflow: hidden;
+  background-color: inherit;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+  position: sticky;
+}
+li {
+  float: left;
+}
+li a1 {
+  display: block;
+  color: #F48FB1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 120%;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 34px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.main {
+  margin-top: 120px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+}
+.topnav a {
+  float: left;
+  color: #F48FB1;
+  text-align: center;
+  padding: 20;
+  text-decoration: none;
+}
+.topnav a:hover {
+  color: black;
+}
+
+/* side navigation bar code */
+.btn-group .button {
+ background-color: #F48FB1;
+ border: 1px solid black;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 16px;
+ cursor: pointer;
+ width: 150px;
+ display: block;
+}
+.btn-group .button:not(:last-child) {
+ border-bottom: none; /* Prevent double borders */
+}
+.btn-group .button:hover {
+ background-color:black;
+}
+.btn-group a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.btn-group {
+  grid-column: 1;
+  grid-row: 0;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+}
+
+/* articles format code */
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px;
+  grid-auto-rows: minmax(100px, auto);
+  max-width: 940px;
+  margin-left: 3;
+  padding: 1em;
+  margin-top: 60px;
+}
+button[name=art5] {
+  background-image: url("https://media.giphy.com/media/WYEWpk4lRPDq0/giphy.gif");
+  border-radius: 5px;
+  border: 2px solid #F48FB1;
+  width: 390px;
+  height: 450px;
+}
+button[name=art6] {
+  background-image: url("https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif");
+  border-radius: 5px;
+  border: 2px solid #F48FB1;
+  width: 390px;
+  height: 450px;
+}
+button[name=art7] {
+  background-image: url("https://media.giphy.com/media/v6aOjy0Qo1fIA/giphy.gif");
+  border-radius: 5px;
+  border: 2px solid #F48FB1;
+  width: 390px;
+  height: 450px;
+}
+button[name=art8] {
+  background-image: url("https://media.giphy.com/media/1xoH1MIPk9enx2RJKm/giphy.gif");
+  border-radius: 5px;
+  border: 2px solid #F48FB1;
+  width: 390px;
+  height: 450px;
+}
+/* .wrapper > div {
+  border: 2px solid rgb(233, 171, 88);
+  border-radius: 5px;
+  background-color: rgba(233, 171, 88, 0.5);
+  padding: 6em;
+  color: #d9480f;
+} */
+.a5 {
+  grid-column: 2;
+  grid-row: 1;
+  margin-left: 160px;
+}
+.a6 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.a7 {
+  grid-column: 2;
+  grid-row: 2;
+  margin-left: 160px;
+}
+.a8 {
+  grid-column: 3;
+  grid-row: 2;
+}
