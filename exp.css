@@ -1,65 +1,100 @@
 ul {
-list-style-type: none;
-margin: 10;
-padding: 20;
-overflow: hidden;
-background-color: inherit;
-position: -webkit-sticky; /Safari /
-/ position: sticky;
-top: 0;
+  list-style-type: none;
+  margin: 10;
+  padding: 20;
+  overflow: hidden;
+  background-color: inherit;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 li {
-float: left;
+  float: left;
 }
 li a1 {
-display: block;
-color: #F48FB1;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-family: 'Montserrat', sans-serif;
-font-size: 120%;
+  display: block;
+  color: #F48FB1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 120%;
 }
 li a {
-display: block;
-color: white;
-text-align: center;
-padding: 14px 34px;
-text-decoration: none;
-font-family: 'Montserrat', sans-serif;
-
-}
-.topnav {
-overflow: hidden;
-background-color: inherit;
-}
-.topnav a {
-float: left;
-color: #F48FB1;
-text-align: center;
-padding: 20;
-text-decoration: none;
-}
-.topnav a:hover {
-color: black;
-}
-body {
-background-image: url("period.jpg");
-background-size: cover;
- /* background-color: blue; */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 34px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 }
 h1 {
-text-align: center;
-color: #F48FB1
-font-family: 'Montserrat', sans-serif;
+  color:#F48FB1;
 }
 p {
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-} */
+  color:#F48FB1
+}
+.main {
+  margin-top: 200px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+}
+.topnav a {
+  float: left;
+  color: #F48FB1;
+  text-align: center;
+  padding: 20;
+  text-decoration: none;
+}
+.topnav a:hover {
+  color: black;
+}
+.btn-group .button {
+ background-color: #F48FB1;
+ border: 1px solid black;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 16px;
+ cursor: pointer;
+ width: 150px;
+ display: block;
+}
+.btn-group .button:not(:last-child) {
+ border-bottom: none; /* Prevent double borders */
+}
+.btn-group .button:hover {
+ background-color:black;
+}
+.btn-group a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.btn-group {
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  margin-left: 20px;
+}
+body {
+  background-image: url("period.jpg");
+  background-size: cover;
+   /* background-color: blue; */
+}
+h1 {
+  text-align: center;
+  color: #F48FB1;
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
 
-
-
-/* img {
-  align: left;
-} */
