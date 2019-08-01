@@ -1,0 +1,65 @@
+ul {
+list-style-type: none;
+margin: 10;
+padding: 20;
+overflow: hidden;
+background-color: inherit;
+position: -webkit-sticky; /Safari /
+/ position: sticky;
+top: 0;
+}
+li {
+float: left;
+}
+li a1 {
+display: block;
+color: #F48FB1;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+font-size: 120%;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 34px;
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+
+}
+.topnav {
+overflow: hidden;
+background-color: inherit;
+}
+.topnav a {
+float: left;
+color: #F48FB1;
+text-align: center;
+padding: 20;
+text-decoration: none;
+}
+.topnav a:hover {
+color: black;
+}
+body {
+background-image: url("period.jpg");
+background-size: cover;
+ /* background-color: blue; */
+}
+h1 {
+text-align: center;
+color: #F48FB1
+font-family: 'Montserrat', sans-serif;
+}
+p {
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+} */
+
+
+
+/* img {
+  align: left;
+} */
