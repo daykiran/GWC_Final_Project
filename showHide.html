@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<button onclick="show1975(chart1975, hidden, show, hidden, hidden) "id="hide">1975</button>
+	<button onclick="show1990(chart1990, show, hidden, hidden, hidden) "id="show">1990</button>
+	<button onclick="show2005(chart2005, hidden, hidden, show, hidden) "id="hide">2005</button>
+	<button onclick="show2015(chart2015, hidden, hidden, hidden, show) "id="hide">2015</button>
+<div class="charts">
+	<style>
+	.under{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		z-index: -1;
+		}
+		.over{
+			position: absolute;
+			left: 40px;
+			top: 10px;
+			z-index: -1;
+			}
+	</style>
+<script>
+
+function show1975(id, visible, visible2, visible3, visible4) {
+		chart1975.style.visibility = (visible ? 'visible' : 'hidden');
+		chart1990.style.visibility = (visible2 ? 'visible' : 'hidden');
+		chart2005.style.visibility = (visible3 ? 'visible' : 'hidden');
+		chart2015.style.visibility = (visible4 ? 'visible' : 'hidden');
+}
+function show1990(id, visible, visible2, visible3, visible4) {
+	chart1975.style.visibility = (visible ? 'visible' : 'hidden');
+	chart1990.style.visibility = (visible2 ? 'visible' : 'hidden');
+	chart2005.style.visibility = (visible3 ? 'visible' : 'hidden');
+	chart2015.style.visibility = (visible4 ? 'visible' : 'hidden');
+
+}
+function show2005(id, visible, visible2, visible3, visible4) {
+	chart1975.style.visibility = (visible ? 'visible' : 'hidden');
+	chart1990.style.visibility = (visible2 ? 'visible' : 'hidden');
+	chart2005.style.visibility = (visible3 ? 'visible' : 'hidden');
+	chart2015.style.visibility = (visible4 ? 'visible' : 'hidden');
+
+}
+function show2015(id, visible, visible2, visible3, visible4) {
+	chart1975.style.visibility = (visible ? 'visible' : 'hidden');
+	chart1990.style.visibility = (visible2 ? 'visible' : 'hidden');
+	chart2005.style.visibility = (visible3 ? 'visible' : 'hidden');
+	chart2015.style.visibility = (visible4 ? 'visible' : 'hidden');
+
+}
+</script>
+</div>
+<!-- one.style.visibility = ('none');
+chart1990.style.visibility = (visible ? 'visible' : 'hidden'); -->
+<img src="RaceDemographics1990.png" id = "chart1975" alt="">
+<img src="RaceDemographics1975.png" id = "chart1990" alt="">
+<img src="RaceDemographics2005.png" id = "chart2005" alt="">
+<img src="RaceDemographics2015.png" id = "chart2015" alt="">
+
+<p>If you click on the "Hide" button, I will disappear.</p>
+
+
+<!-- <button onclick="show1975(chart1975, hidden, show) "id="hide">2005</button>
+<button onclick="show1975(chart1975, hidden, show) "id="hide">2015</button> -->
+
+</body>
+</html>
