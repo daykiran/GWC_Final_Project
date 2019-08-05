@@ -35,11 +35,11 @@ p {
   color:#F48FB1
 }
 .main {
-  margin-top: 200px;
+  margin-top: 120px;
 }
 .topnav {
   overflow: hidden;
-  background-color: #FFFFFF;
+  background-color: inherit;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%;
@@ -84,17 +84,18 @@ p {
   margin-left: 20px;
 }
 body {
-  background-image: url("period.jpg");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0f/2010-02-19_3000x2000_chicago_skyline.jpg");
   background-size: cover;
    /* background-color: blue; */
 }
 h1 {
   text-align: center;
-  color: #F48FB1;
+  color: 	#000000;
   font-family: 'Montserrat', sans-serif;
 }
 p {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  color: 	#000000;
+  /* margin-right: 4px; */
 }
-
