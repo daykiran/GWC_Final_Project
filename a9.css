@@ -184,7 +184,109 @@ blockquote {
 .mb-attribution {
   text-align : right;
 }
+/* blockquote code 2 */
+@import "compass/css3";
 
+.testimonial-quote {
+    font-size: 16px;
+}
+.testimonial-quote blockquote {
+    /* Negate theme styles */
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: gray;
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 1.4 !important;
+    margin: 0;
+    position: relative;
+    text-shadow: 0 1px white;
+    z-index: 600;
+}
+.testimonial-quote blockquote * {
+    box-sizing: border-box;
+}
+.testimonial-quote blockquote p {
+    color: #75808a;
+    line-height: 1.4 !important;
+}
+.testimonial-quote blockquote p:first-child:before {
+    content: '\201C';
+    color: #81bedb;
+    font-size: 7.5em;
+    font-weight: 700;
+    opacity: .3;
+    position: absolute;
+    top: -.4em;
+    left: -.2em;
+    text-shadow: none;
+    z-index: -300;
+}
+.testimonial-quote {
+    position: relative;
+}
+.testimonial-quote .quote-container {
+    padding-left: 160px;
+}
+.testimonial-quote.right .quote-container {
+    padding-left: 0;
+    padding-right: 160px;
+}
+/* blockquote code 3 */
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+  line-height: 1.8;
+}
+.ArticleCopy{
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  width: 80%;
+  margin:0 auto;
+  padding: 3rem;
+}
+.ArticleCopy p {
+    text-rendering: optimizeLegibility;
+}
+.ArticleCopy blockquote {
+    border-radius: 3px;
+    position: relative;  /*  <--- */
+    font-style: italic;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    width: 80%;  /* create space for the quotes */
+    color: #4a4a4a;
+    margin: 1rem auto 2rem;
+    color: #4a4a4a;
+    background: #E8E8E8;
+}
+/* -- create the quotation marks -- */
+.ArticleCopy blockquote:before,
+.ArticleCopy blockquote:after{
+    font-family: FontAwesome;
+    position: absolute;
+    /* -- inside the relative position of blockquote -- */
+    top: 13px;
+    color: #E8E8E8;
+    font-size: 34px;
+}
+.ArticleCopy blockquote:before{
+    content: "\f10d";
+    margin-right: 13px;
+    right: 100%;
+}
+.ArticleCopy blockquote:after{
+    content: "\f10e";
+    margin-left: 13px;
+    left: 100%;
+}
 /* text code */
 h1 {
   text-align: center;
