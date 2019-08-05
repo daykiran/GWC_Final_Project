@@ -1,4 +1,16 @@
-
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 20;
+  overflow: hidden;
+  background-color: inherit;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+li {
+  float: left;
+}
 li a1 {
   display: block;
   color: #F48FB1;
@@ -8,7 +20,14 @@ li a1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 120%;
 }
-
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 34px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
 h1 {
   color:#F48FB1;
 }
@@ -35,7 +54,35 @@ p {
 .topnav a:hover {
   color: black;
 }
-
+.btn-group .button {
+ background-color: #F48FB1;
+ border: 1px solid black;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 16px;
+ cursor: pointer;
+ width: 150px;
+ display: block;
+}
+.btn-group .button:not(:last-child) {
+ border-bottom: none; /* Prevent double borders */
+}
+.btn-group .button:hover {
+ background-color:black;
+}
+.btn-group a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.btn-group {
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  margin-left: 20px;
+}
 body {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0f/2010-02-19_3000x2000_chicago_skyline.jpg");
   background-size: cover;
@@ -51,107 +98,4 @@ p {
   font-family: 'Montserrat', sans-serif;
   color: 	#000000;
   /* margin-right: 4px; */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.menu {
-  list-style-type: none;
-  margin: 10;
-  padding: 20;
-  overflow: hidden;
-  background-color: inherit;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-    display: block;
-}
-
-  .menu li {
- float: left;
- display: inline-block;
- position: relative;
- z-index: 100;
-}
-
-/* .menu li:first-child {
-    margin-left: 0;
-} */
-
-.menu li a {
-    font-weight: 600;
-    display: block;
-    transition: all 0.2s ease-in-out 0s;
-    color: #F48FB1;
-    text-align: center;
-    padding: 14px 34px;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-} */
-
-.menu ul {
-    visibility: hidden;
-    opacity: 0;
-    margin: 0;
-    padding: 0;
-    width: 170px;
-    position: absolute;
-    left: 0px;
-    background: #fff;
-    z-index: 99;
-    transform: translate(0,20px);
-    transition: all 0.2s ease-out;
-}
-
-.menu ul:after {
-    bottom: 100%;
-    left: 20%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #fff;
-    border-width: 6px;
-    margin-left: -6px;
-}
-
-.menu ul li {
-    display: block;
-    float: none;
-    background: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu ul li a {
-    font-size: 12px;
-    font-weight: normal;
-    display: block;
-    color:#F48FB1;
-    background: white;
-}
-
-.menu ul li a:hover,.menu ul li:hover>a {
-    background: #F48FB1;
-    color: white;
-}
-
-.menu li:hover>ul {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(0,0);
 }
