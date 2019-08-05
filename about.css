@@ -35,6 +35,9 @@ li a {
 .topnav {
   overflow: hidden;
   background-color: inherit;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
 }
 .topnav a {
   float: left;
@@ -46,7 +49,9 @@ li a {
 .topnav a:hover {
   color: black;
 }
-
+.main {
+  margin-top: 60px;
+}
 
 body {
   background-image: url("https://i.pinimg.com/originals/da/29/cb/da29cbc5eaae6568be5891b407668d9a.jpg");
@@ -71,14 +76,13 @@ div1 {
 }
 
 .col1 {
-    margin-left:140px;
+    margin-left:100px;
     float:left;
     width:100px;
 }
-
 .col2 {
     float:left;
-    width:200px;
+    width:240px;
     margin-left:140px;
 }
 .col3 {
@@ -91,9 +95,11 @@ div1 {
   width:200px;
   margin-left: 100px;
 }
-pre {
+p {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 h3 {
   font-family: 'Montserrat', sans-serif;

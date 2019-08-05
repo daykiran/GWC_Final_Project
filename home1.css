@@ -29,9 +29,15 @@ li a {
   font-family: 'Montserrat', sans-serif;
 
 }
+.main {
+  margin-top: 60px;
+}
 .topnav {
   overflow: hidden;
   background-color: inherit;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
 }
 .topnav a {
   float: left;
@@ -57,4 +63,6 @@ h1 {
 p {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  margin-left: 100px;
+  margin-right: 100px;
 }

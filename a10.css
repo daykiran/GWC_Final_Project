@@ -82,7 +82,90 @@ li a {
   grid-row: 0;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
 }
+/*blockquote code*/
+blockquote.left {
+  width: 200px;
+  margin: 5px 15px 5px 0;
+  padding: 5px 0;
+  border: 3px double #aaa;
+  border-width: 3px 0;
+  font-size: 1.4em;
+  text-align: center;
+  float: left;
+}
+blockquote.right {
+  width: 200px;
+  margin: 5px 0 5px 15px;
+  padding: 5px 0;
+  border: 3px double #aaa;
+  border-width: 3px 0;
+  font-size: 1.4em;
+  text-align: center;
+  float: right;
+}
+blockquote {
+  margin: 0 30px 15px 30px;
+  padding: 0 0 0 10px;
+  font-size: 1.1em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-left: 2px solid #ddd;
+  color: #888;
+}
+blockquote.left {
+  width: 200px;
+  margin: 5px 15px 5px 0;
+  font-size: 1.4em;
+  text-align: center;
+  border: none !important;
+  padding: 0 !important;
+  float: left;
+}
+blockquote.right {
+  width: 200px;
+  margin: 5px 0 5px 15px;
+  font-size: 1.4em;
+  text-align: center;
+  border: none !important;
+  padding: 0 !important;
+  float: right;
+}
+@import "compass/css3";
+
+/* Some vars */
+$background-color: hsl(50, 5, 97);
+$black: hsl(200, 40, 10);
+$white: $background-color;
+$base-font-size: 2.4em;
+$base-line-height: 1.5em;
+
+.brooks {
+  position: relative;
+  font-family: 'Sanchez', serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-style: italic;
+  &:before {
+      content: '\201C';
+      position: absolute;
+      top: 0.25em;
+      left: -0.15em;
+      color: darken($white, 7%);
+      font-size: 6em;
+      z-index: -1;
+   }
+}
+
 /* text code */
 h1 {
   text-align: center;
+}
+pre {
+  font-family: 'Cormorant', serif;
+}
+p {
+  font-family: 'Cormorant', serif;
+  font-weight: bold;
+}
+body {
+  background-image: url("https://media.idownloadblog.com/wp-content/uploads/2019/04/Warm-for-iPhoneXSMAX-iPhoneXR-iphone-wallpaper-gradient-AR72014-768x1662.png");
 }
