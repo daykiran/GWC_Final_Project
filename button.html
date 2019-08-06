@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <head>
+  </head>
+
+<!-- displays likes as text -->
+<p id="p1">0 Likes</p>
+
+<!-- establishes image as a button -->
+<div class="heart">
+  <input type="image" src="heart.png" name="saveForm" class="btTxt submit" id="likeButton" onClick = "showLikes()" height=90 width=100/>
+</div>
+<div class="textFormat">
+
+<!-- updates likes after button is clicked -->
+<script>
+var numberOfLikes = 0;
+function showLikes(){
+  numberOfLikes+=1;
+  if (numberOfLikes==1){
+  	document.getElementById("p1").innerHTML = "1 Like";
+  }else{
+  	document.getElementById("p1").innerHTML = numberOfLikes + " Likes";
+}
+}
+
+</script>
+</div>
+
+</body>
+</html>
