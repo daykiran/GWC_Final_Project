@@ -1,68 +1,76 @@
 ul {
-  list-style-type: none;
-  margin: 10;
-  padding: 20;
-  overflow: hidden;
-  background-color: inherit;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+list-style-type: none;
+margin: 10;
+padding: 20;
+overflow: hidden;
+background-color: inherit;
+position: -webkit-sticky; /* Safari */
+position: sticky;
+top: 0;
 }
 li {
-  float: left;
+float: left;
 }
 li a1 {
-  display: block;
-  color: #F48FB1;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 120%;
+display: block;
+color: #F48FB1;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+font-size: 120%;
 }
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 34px;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 34px;
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
 
-}
-.main {
-  margin-top: 60px;
 }
 .topnav {
-  overflow: hidden;
-  background-color: inherit;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%;
+overflow: hidden;
+background-color: inherit;
 }
 .topnav a {
-  float: left;
-  color: #F48FB1;
-  text-align: center;
-  padding: 20;
-  text-decoration: none;
+float: left;
+color: #F48FB1;
+text-align: center;
+padding: 20;
+text-decoration: none;
 }
 .topnav a:hover {
-  color: black;
+color: black;
 }
-
-
 body {
-  background-image: url("https://i.pinimg.com/originals/da/29/cb/da29cbc5eaae6568be5891b407668d9a.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+background-image: url("http://paperlief.com/images/chicago-skyline-sunset-wallpaper-1.jpg");
 }
 h1 {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
 }
 p {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  margin-left: 100px;
-  margin-right: 100px;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+}
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
 }
