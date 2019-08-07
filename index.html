@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+
+  </head>
+  <body>
+  
+<script>
+function sliderInput(val) {
+    document.getElementById("slider").innerHTML = val;
+    val = parseInt(val)
+    console.log("value:", val)
+    hide()
+    select(val)
+  }
+function hide(){
+  document.getElementById("chart2015").style.visibility = "hidden";
+  document.getElementById("chart1975").style.visibility = "hidden";
+}
+function select(val){
+  if (val == 1975) {
+    document.getElementById("chart1975").style.visibility = "visible";
+    document.getElementById("chart1990").style.visibility = "hidden";
+    document.getElementById("chart2005").style.visibility = "hidden";
+    document.getElementById("chart2015").style.visibility = "hidden";
+} 
+  else if (val == 1990) {
+    document.getElementById("chart1975").style.visibility = "hidden";
+    document.getElementById("chart1990").style.visibility = "visible";
+    document.getElementById("chart2005").style.visibility = "hidden";
+    document.getElementById("chart2015").style.visibility = "hidden";
+  }
+  else if (val == 2005) {
+    document.getElementById("chart1975").style.visibility = "hidden";
+    document.getElementById("chart1990").style.visibility = "hidden";
+    document.getElementById("chart2005").style.visibility = "visible";
+    document.getElementById("chart2015").style.visibility = "hidden";
+  }
+else {
+    document.getElementById("chart1975").style.visibility = "hidden";
+    document.getElementById("chart1990").style.visibility = "hidden";
+    document.getElementById("chart2005").style.visibility = "hidden";
+    document.getElementById("chart2015").style.visibility = "visible";
+}
+}
+
+</script>
+<div class = "container4" > 
+<img src="RaceDemographics2015.png" id = "chart2015" alt="">
+</div>
+<div class = "container3" > 
+<img src="RaceDemographics2005.png" id = "chart2005" alt="">
+</div>
+
+<div class = "container2" > 
+<img src="RaceDemographics1990.png" id = "chart1990" alt="">
+</div>
+
+
+
+<div class = "container1" > 
+<img src="RaceDemographics1975.png" id = "chart1975" alt="">
+<input type="range" min="1975" max="2020" step="15" onInput="sliderInput(this.value)" id ="slider">
+</div>
+
+  </body>
+</html>
