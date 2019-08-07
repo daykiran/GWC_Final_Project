@@ -1,91 +1,146 @@
-body {
-  background-image: url("https://media.idownloadblog.com/wp-content/uploads/2019/04/Warm-for-iPhoneXSMAX-iPhoneXR-iphone-wallpaper-gradient-AR72014-768x1662.png");
-}
 /* top navbar code */
-ul {
-  list-style-type: none;
-  margin: 10;
-  padding: 20;
-  overflow: hidden;
-  background-color: inherit;
-  position: -webkit-sticky; /* Safari */
+*{
+ margin: 0;
+ padding: 0;
+ direction: ltr;
+ box-sizing: border-box;
+}
+.navbar {
+  overflow:hidden;
+  background-color: #F48FB1;
   top: 0;
-  position: sticky;
+  z-index: 10 !important;
 }
-li {
-  float: left;
-}
-li a1 {
-  display: block;
-  color: #F48FB1;
+.navbar a {
+  float: right;
+  font-size: 20px;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 120%;
 }
-li a {
-  display: block;
+.navbar a1 {
+  float: left;
+  font-size: 35px;
   color: white;
   text-align: center;
-  padding: 14px 34px;
+  padding: 14px 16px;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
 }
-.main {
-  margin-top: 120px;
-  margin-left: 220px;
-  margin-right: 100px;
-}
-.topnav {
+.dropdown {
+  float: right;
   overflow: hidden;
-  background-color: #FFFFFF;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%;
+  opacity:0.9;
 }
-.topnav a {
-  float: left;
-  color: #F48FB1;
-  text-align: center;
-  padding: 20;
-  text-decoration: none;
-}
-.topnav a:hover {
-  color: black;
-}
-/* side navigation bar code */
-.btn-group .button {
- background-color: #F48FB1;
- border: 1px solid black;
- color: white;
- padding: 15px 32px;
- text-align: center;
- text-decoration: none;
- font-size: 16px;
- cursor: pointer;
- font-family: 'Montserrat', sans-serif;
- width: 150px;
- display: block;
-}
-.btn-group .button:not(:last-child) {
- border-bottom: none; /* Prevent double borders */
-}
-.btn-group .button:hover {
- background-color:black;
-}
-.btn-group a {
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
   color: white;
-  text-align: center;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color:#F48FB1;
+  font-family: 'Montserrat', sans-serif;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+.dropdown-content a {
+  float: none;
+  color: #F48FB1;
+  padding: 12px 16px;
   text-decoration: none;
-  font-size: 16px;
+  display: block;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 10;
 }
-.btn-group {
-  grid-column: 1;
-  grid-row: 0;
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
-/* text code */
-h1 {
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 10;
+}
+body{
+  background-color: #FFFAFA
+  /* background-image: url("newspaper.jpg"); */
+}
+hr{
+  width=10%; height = 10px; background: #ffffff;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #555555
+}
+h1{
+  font-family: 'Volkhov', serif;
+  font-size: 90px;
   text-align: center;
+  background-image: url("newspaper.jpg");
+
+}
+h2{
+  font-family: 'Volkhov', serif;
+  font-size: 50px;
+
+}
+
+.wrapper {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-gap: 100px;
+ grid-auto-rows: minmax(100px, auto);
+ max-width: 940px;
+ margin-left: 3;
+ padding: 1em;
+ margin-top: 60px;
+}
+.a5 {
+ grid-column: 1;
+ grid-row: 1;
+ font-family: 'Old Standard TT', serif;
+ font-size: 20px;
+
+ grid-row: 1;
+}
+.a6 {
+ grid-column: 1;
+ grid-row: 2;
+ font-family: 'Old Standard TT', serif;
+ font-size: 20px;
+
+}
+.a7 {
+ grid-column: 2;
+ grid-row: 1;
+ margin-left: 10px;
+ font-family: 'Old Standard TT', serif;
+ font-size: 20px;
+ width: 500px;
+
+}
+.a8 {
+ grid-column: 2;
+ grid-row: 2;
+ font-family: 'Old Standard TT', serif;
+ font-size: 20px;
+
 }
