@@ -1,3 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+  box-sizing: border-box;
+ }
+ body {
+   font-family: 'Cormorant', serif;
+   font-size: 30px;
+   background-image: url("https://i.pinimg.com/originals/64/97/17/649717f77fa316782d45225345722a49.jpg");
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+  }
 .map {
   width: 200px;
   height: 200px;
@@ -9,60 +24,191 @@
   margin-right: auto;
   width: 50%;
 }
-ul {
- list-style-type: none;
- margin: 10;
- padding: 20;
- overflow: hidden;
- background-color: inherit;
- position: -webkit-sticky; /* Safari */
- position: sticky;
- top: 0;
+ .navbar {
+   overflow:hidden;
+   background-color: #F48FB1;
+   top: 0;
+   z-index: 10 !important;
+ }
+ .navbar a {
+   float: right;
+   font-size: 20px;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+ }
+ .navbar a1 {
+   float: left;
+   font-size: 35px;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+ }
+ .dropdown {
+   float: right;
+   overflow: hidden;
+   opacity:0.9;
+ }
+ .dropdown .dropbtn {
+   font-size: 20px;
+   border: none;
+   outline: none;
+   color: white;
+   padding: 14px 16px;
+   background-color: inherit;
+   font-family: inherit;
+   margin: 0;
+   font-family: 'Montserrat', sans-serif;
+ }
+ .navbar a:hover, .dropdown:hover .dropbtn {
+   background-color: white;
+   color:#F48FB1;
+   font-family: 'Montserrat', sans-serif;
+ }
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: white;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 10;
+ }
+
+ .dropdown-content a {
+   float: none;
+   color: #F48FB1;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+   font-family: 'Montserrat', sans-serif;
+   z-index: 10;
+ }
+
+ .dropdown-content a:hover {
+   background-color: #ddd;
+ }
+
+ .dropdown:hover .dropdown-content {
+   display: block;
+   z-index: 10;
+ }
+.main-container {
+  position:inherit;
+  background:#f1f1f1f1;
+  text-align: center;
+  }
+.main-container1 {
+  position:inherit;
+  background-image: url("https://media1.fdncms.com/chicago/imager/u/original/50375395/img_0166.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-li {
- float: left;
+.main-container2 {
+  position:inherit;
+  background-image: url("https://i.pinimg.com/originals/d5/57/eb/d557eb06d7f7a529012f4df9bca79475.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-li a1 {
- display: block;
- color: #F48FB1;
- text-align: center;
- padding: 14px 16px;
- text-decoration: none;
- font-family: 'Montserrat', sans-serif;
- font-size: 120%;
+.main-container3 {
+  position:inherit;
+  background-image: url("https://i.pinimg.com/originals/b5/0f/50/b50f506dbd5089c68f5842c1114010d7.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-li a {
- display: block;
- color: white;
- text-align: center;
- padding: 14px 34px;
- text-decoration: none;
- font-family: 'Montserrat', sans-serif;
+.main-container4 {
+  position:inherit;
+  background-image: url("https://get.wallhere.com/photo/wall-purple-graffiti-street-art-pink-Chicago-mural-Amuse-ART-de-kwt-126-chgo-842127.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.topnav {
- overflow: hidden;
- background-color: inherit;
+.main-container5 {
+  position:inherit;
+  background-image: url("https://img.theculturetrip.com/wp-content/uploads/2016/03/photo-2_8-must-see-street-murals-in-rogers-park.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.topnav a {
- float: left;
- color: #F48FB1;
- text-align: center;
- padding: 20;
- text-decoration: none;
-}
-.topnav a:hover {
- color: black;
-}
-/* body {
- background-image: url("home_background.jpg");
- background-repeat: no-repeat;
- background-size: cover; */
+.main-container6 {
+  position:inherit;
+  background-image: url("https://s2.best-wallpaper.net/wallpaper/1920x1200/1606/Chicago-city-USA-skyscrapers-red-sky-dusk-sunset_1920x1200.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 h1 {
- text-align: center;
- font-family: 'Montserrat', sans-serif;
+  font-size:40px;
 }
-/* p {
- text-align: center;
- font-family: 'Montserrat', sans-serif;
-} */
+ .slideshow-container {
+  position: inherit;
+  background: #f1f1f1f1;
+ }
+ .mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+ }
+ .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 75%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  background-color: #ddd;
+  color:#F48FB1;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+ }
+ .next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+ }
+ .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+ }
+ .dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #F48FB1;
+  opacity:0.95;
+ }
+ .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+ }
+ .active, .dot:hover {
+  background-color: black;
+ }
+ q {
+  font-style: italic;}
+ .author {
+  color: #F48FB1;
+ }
+.footer {
+  font-size:10px;
+}

@@ -1,58 +1,9 @@
-ul {
-  list-style-type: none;
-  margin: 10;
-  padding: 20;
-  overflow: hidden;
-  background-color: inherit;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-li {
-  float: left;
-}
-li a1 {
-  display: block;
-  color: #F48FB1;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 120%;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 34px;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-
-}
-/* li a:hover:not(.active) {
-  background-color: #111;
-} */
-.topnav {
-  overflow: hidden;
-  background-color: inherit;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%;
-}
-.topnav a {
-  float: left;
-  color: #F48FB1;
-  text-align: center;
-  padding: 20;
-  text-decoration: none;
-}
-.topnav a:hover {
-  color: black;
-}
-.main {
-  margin-top: 60px;
-}
-
+*{
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+  box-sizing: border-box;
+ }
 body {
   background-image: url("https://i.pinimg.com/originals/da/29/cb/da29cbc5eaae6568be5891b407668d9a.jpg");
   background-repeat: no-repeat;
@@ -64,6 +15,8 @@ h1 {
 p {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 div {
   font-family: 'Montserrat', sans-serif;
@@ -95,13 +48,110 @@ div1 {
   width:200px;
   margin-left: 100px;
 }
-p {
+pre {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 h3 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+}
+
+ .navbar {
+   overflow:hidden;
+   background-color: #F48FB1;
+   top: 0;
+   z-index: 10 !important;
+ }
+
+ .navbar a {
+   float: right;
+   font-size: 20px;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+ }
+ .navbar a1 {
+   float: left;
+   font-size: 35px;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+ }
+
+
+ .dropdown {
+   float: right;
+   overflow: hidden;
+   opacity:0.9;
+ }
+
+ .dropdown .dropbtn {
+   font-size: 20px;
+   border: none;
+   outline: none;
+   color: white;
+   padding: 14px 16px;
+   background-color: inherit;
+   font-family: inherit;
+   margin: 0;
+   font-family: 'Montserrat', sans-serif;
+ }
+
+ .navbar a:hover, .dropdown:hover .dropbtn {
+   background-color: white;
+   color:#F48FB1;
+   font-family: 'Montserrat', sans-serif;
+ }
+
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: white;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 10;
+ }
+
+ .dropdown-content a {
+   float: none;
+   color: #F48FB1;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+   font-family: 'Montserrat', sans-serif;
+   z-index: 10;
+ }
+
+ .dropdown-content a:hover {
+   background-color: #ddd;
+ }
+
+ .dropdown:hover .dropdown-content {
+   display: block;
+   z-index: 10;
+ }
+.main-container {
+  position:inherit;
+  background:#f1f1f1f1;
+  text-align: center;
+  }
+.main-container1 {
+  position:inherit;
+  background-image: url("https://i.redd.it/8a945r0snzh21.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+h1 {
+  font-size:40px;
+}
+div2 {
+  color:#F48FB1;
 }

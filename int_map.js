@@ -38,7 +38,7 @@ function init() {
 
   view = new ol.View({
     center: ourLoc,
-    zoom:6
+    zoom:8
   });
 
   map = new ol.Map({
@@ -53,11 +53,65 @@ function init() {
   });
   var layer = new ol.layer.Vector({
     source: new ol.source.Vector({
-        features: [
-          new ol.Feature({
-              geometry: new ol.geom.Point(ol.proj.fromLonLat([-83.290577, 42.4378459]))
-          })
-        ]
+      features: [
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-87.9806, 42.0834]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-88.0834, 42.0314]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-87.6651, 41.8796]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-87.6899, 41.8676]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-87.6551, 41.8786]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-87.6951, 41.8756]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-87.6751, 41.8916]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-87.6491, 41.8838]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-88.2320, 41.6332]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-87.8398, 41.8950]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-87.8298, 41.8952]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-87.8298, 41.8974]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-87.6398, 41.8956]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-88.2535, 41.7608]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-88.1637, 41.7638]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-88.1549, 41.7519]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-88.2541, 41.7308]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-88.1563, 41.6508]))
+        }),
+        new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.fromLonLat([-88.4201, 41.6606]))
+        })
+      ]
     })
 
   });
