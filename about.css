@@ -32,21 +32,29 @@ div1 {
     margin-left:100px;
     float:left;
     width:100px;
+    color:white;
+    font-size:16px;
 }
 .col2 {
     float:left;
     width:240px;
     margin-left:140px;
+    color:white;
+    font-size:16px;
 }
 .col3 {
   float:left;
   width:200px;
   margin-left:100px;
+  color:white;
+  font-size:16px;
 }
 .col4 {
   float:left;
   width:200px;
   margin-left: 100px;
+  color:white;
+  font-size:16px;
 }
 pre {
   font-family: 'Montserrat', sans-serif;
@@ -131,24 +139,13 @@ h3 {
  .dropdown-content a:hover {
    background-color: #ddd;
  }
-
+.main{
+  font-size:25px;
+}
  .dropdown:hover .dropdown-content {
    display: block;
    z-index: 10;
  }
-.main-container {
-  position:inherit;
-  background:#f1f1f1f1;
-  text-align: center;
-  }
-.main-container1 {
-  position:inherit;
-  background-image: url("https://i.redd.it/8a945r0snzh21.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  }
 h1 {
   font-size:40px;
 }

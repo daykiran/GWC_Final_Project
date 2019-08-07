@@ -120,7 +120,7 @@
 }
 .main-container3 {
   position:inherit;
-  background-image: url("https://i.pinimg.com/originals/b5/0f/50/b50f506dbd5089c68f5842c1114010d7.jpg");
+  background-image: url("https://img.theculturetrip.com/wp-content/uploads/2016/03/photo-2_8-must-see-street-murals-in-rogers-park.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -134,14 +134,8 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.main-container5 {
-  position:inherit;
-  background-image: url("https://img.theculturetrip.com/wp-content/uploads/2016/03/photo-2_8-must-see-street-murals-in-rogers-park.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
+
 .main-container6 {
   position:inherit;
   background-image: url("https://s2.best-wallpaper.net/wallpaper/1920x1200/1606/Chicago-city-USA-skyscrapers-red-sky-dusk-sunset_1920x1200.jpg");
@@ -211,4 +205,8 @@ h1 {
  }
 .footer {
   font-size:10px;
+}
+#pi {
+  width:600px;
+  height:400px;
 }
